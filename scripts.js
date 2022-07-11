@@ -106,3 +106,61 @@ function check(arr, el) {
     }
     return false;
   }
+
+  console.log(x)
+  console.log(x.pop())
+  console.log(x.splice(0,3))
+
+
+
+let nums=[1, 2, 3, 4, 6, 7]
+let target=6
+function sum(){
+    let start=0
+    let end=nums.lenth-1
+    while(start<=end){
+      let current=nums[start]+nums[end]
+      if(current>target){
+        end-=1
+      }else if(current<target){
+        end+=target
+      }else{
+        return [start,end]
+      }
+    }
+    return []
+  }
+  console.log(sum(nums,target))
+
+const numbs = [1, 2, 3, 4, 6, 7];
+const goal = 6;
+
+function twoSum(numbs, goal) {
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start <= end) {
+    const curr = numbs[start] + numbs[end];
+
+    if (curr > goal) {
+      end -= 1;
+    } else if (curr < goal) {
+      start += 1;
+    } else {
+      return [start, end];
+    }
+  }
+
+  return [];
+}
+
+console.log(twoSum(numbs, goal));
+let a = function(){
+  console.log("hello")
+}
+a()
+(function(){
+    console.log(23)
+  }
+)
+()
