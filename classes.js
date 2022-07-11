@@ -25,5 +25,8 @@ class students {
     this.hobby=function(){
         return "I love cooking"
     }
-
   }
+  var names=["Lucy","Chirii","Zipporah"]
+  var [Conslate ,... others]=names
+  console.log(Conslate)
+  console.log(others)
