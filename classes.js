@@ -17,3 +17,13 @@ class students {
   console.log(firstStudent.school)
   console.log(firstStudent.hobby())
   console.log(firstStudent.country())
+
+// function constructor
+  function Student(name,age,school){
+    this.name=name
+    this.age=agethis.school=school
+    this.hobby=function(){
+        return "I love cooking"
+    }
+
+  }
