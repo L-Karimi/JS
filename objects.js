@@ -41,3 +41,6 @@ Object.freeze(person);
 p["school"] = "AkiraChix";
 console.log(person);
 
+let x =[{name:"Lucy",age:22},{name:"Jenniffer",age:34},{name:"Davis",age:24}]
+let z=x.filter(person=>person.age>23)
+ console.log(z)
